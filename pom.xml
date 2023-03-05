@@ -127,6 +127,19 @@
 					<formats>
 						<format>xml</format>
 					</formats>
+					
+     <!-- added -->      
+					<check>
+					    <haltOnFailure>true</haltOnFailure> <!-- optional -->
+					    <!-- Per-class thresholds -->
+					    <lineRate>80</lineRate>
+					    <branchRate>80</branchRate>
+					    <!-- Project-wide thresholds -->
+					    <totalLineRate>90</totalLineRate>
+					    <totalBranchRate>90</totalBranchRate>
+					  </check>
+					<!-- added --> 
+        
 				</configuration>
 				<executions>
 					<execution>
